@@ -1,0 +1,6 @@
+framework module Pods_DSGCodingChallenge_DSGCodingChallengeUITests {
+  umbrella header "Pods-DSGCodingChallenge-DSGCodingChallengeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

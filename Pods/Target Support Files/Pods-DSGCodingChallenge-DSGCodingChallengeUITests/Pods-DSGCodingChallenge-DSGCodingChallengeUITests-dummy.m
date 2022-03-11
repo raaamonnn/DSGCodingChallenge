@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_DSGCodingChallenge_DSGCodingChallengeUITests : NSObject
+@end
+@implementation PodsDummy_Pods_DSGCodingChallenge_DSGCodingChallengeUITests
+@end
