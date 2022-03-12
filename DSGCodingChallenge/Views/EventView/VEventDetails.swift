@@ -12,21 +12,32 @@ struct VEventDetails: View {
     var event: VMEventDetails
     @State var favored = false
     
+    private let dateFormatter: DateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .long
+        dateFormatter.timeStyle = .short
+        return dateFormatter
+    }()
+    
     var body: some View {
         ScrollView(.vertical) {
             VStack(alignment: .leading) {
-                WebImage(url: URL(string: event.imageString))
+                WebImage(url: URL(string: event.imageString ?? ""))
                     .resizable()
                     .placeholder(Image(systemName: "photo"))
                     .scaledToFit()
                 
                 VStack(alignment: .leading) {
-                    Text(event.date)
-                        .bold()
+                    Text(event.date, formatter: dateFormatter)
                         .font(.title)
+                        .bold()
+                        .lineLimit(1)
+                        .padding(.bottom, 1)
+                        
                     Text(event.location)
                         .foregroundColor(.gray)
-                        .font(.title2)
+                        .bold()
+                        .font(.headline)
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 16)
@@ -40,16 +51,12 @@ struct VEventDetails: View {
             //Add persistence
         }, label: {
             if favored {
-                Image("heart.fill")
+                Image(systemName: "heart.fill")
+                    .foregroundColor(.pink)
             } else {
-                Image("heart")
+                Image(systemName: "heart")
+                    .foregroundColor(.pink)
             }
         }))
-    }
-}
-
-struct VEventDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        VEventDetails(event: VMEventDetails(title: "Beastie Boys", imageString: "https://chairnerd.global.ssl.fastly.net/images/bandshuge/band_266.jpg", location: "Location", date: "Date"))
     }
 }

@@ -9,8 +9,15 @@ import Foundation
 
 struct VMEventDetails {
     let title: String
-    let imageString: String
+    let imageString: String?
     let location: String
-    let date: String
+    let date: Date
 //    let liked: Bool
+    
+    init(event: VMEventListItem) {
+        self.title = event.title
+        self.imageString = event.imageString
+        self.location = event.location
+        self.date = event.date
+    }
 }

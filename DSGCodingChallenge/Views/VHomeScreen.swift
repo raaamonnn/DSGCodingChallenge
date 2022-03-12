@@ -8,31 +8,17 @@
 import SwiftUI
 
 struct VHomeScreen: View {
-    
-    @State var retrievedData = false
-    @State var events: [VMEventListItem]? = nil
+    @ObservedObject var repoEvents = REPOEvents()
     var body: some View {
-        ZStack {
-            if events != nil {
-                Text("ASD")
-                VEventList(events: events!)
-            } else {
-                VSplashScreen()
-            }
-        }
-        .animation(.easeInOut)
-        .onAppear {
-            SVCSeatGeek.getEvents(eventName: "") { result in //weak self?
-                switch result {
-                case .success(let eventsModel):
-                    for event in eventsModel.events {
-                        events?.append(VMEventListItem(event: event))
-                    }
-                    retrievedData.toggle()
-                case .failure(let error):
-                    print("VHomeScreen \t Error retrieving Events \(error)")
+        NavigationView {
+            ZStack {
+                if !repoEvents.events.isEmpty {
+                    VEventList(repoEvents: repoEvents)
+                } else {
+                    VSplashScreen()
                 }
             }
+            .animation(.easeInOut)
         }
     }
 }

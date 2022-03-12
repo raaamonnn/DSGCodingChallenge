@@ -8,9 +8,10 @@
 import Foundation
 
 struct Events: Codable {
-    let events: [Event]
+    var events: [DTOEvent]
 }
-struct Event: Codable {
+
+struct DTOEvent: Codable {
     let id: Int
     let title: String
     let datetime_local: String

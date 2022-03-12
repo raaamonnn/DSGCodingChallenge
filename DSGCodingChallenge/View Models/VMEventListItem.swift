@@ -9,12 +9,12 @@ import Foundation
 
 struct VMEventListItem: Identifiable {
     var id = UUID()
-    let imageString: String?
-    let title: String
-    let location: String
-    let date: Date
+    var imageString: String?
+    var title: String
+    var location: String
+    var date: Date
     
-    init(event: Event) {
+    init(event: DTOEvent) {
         self.imageString = event.performers[0].image!
         self.title = event.title
         self.location = event.venue.address + ", " + event.venue.state

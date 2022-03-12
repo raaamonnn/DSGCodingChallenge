@@ -10,36 +10,41 @@ import SDWebImageSwiftUI
 
 struct VEventListItem: View {
     var event: VMEventListItem
-    
+
     var body: some View {
-        ZStack {
-            Color(.systemGroupedBackground)
-            HStack {
-                WebImage(url: URL(string: event.imageString ?? ""))
-                    .placeholder(Image(systemName: "photo"))
-                    .cornerRadius(12)
-                    .padding(8)
-                    .scaledToFit()
-                
-                VStack (alignment: .leading){
-                    Text(event.title)
-                        .bold()
-                        .lineLimit(1)
-                    
-                    Text(event.location)
-                        .lineLimit(1)
-                    
-                    Text(event.date, style: .date)
-                        .foregroundColor(.gray)
-                        .lineLimit(1)
+        NavigationLink (
+            destination: VEventDetails(event: VMEventDetails(event: event))
+                .navigationBarTitleDisplayMode(.inline),
+            label: {
+                ZStack {
+                    Color(.secondarySystemBackground)
+                    HStack {
+                        WebImage(url: URL(string: event.imageString ?? ""))
+                            .placeholder(Image(systemName: "photo"))
+                            .frame(width: 80, height: 80, alignment: .leading)
+                            .cornerRadius(12)
+                            .padding(8)
+
+                        VStack (alignment: .leading) {
+                            Text(event.title)
+                                .foregroundColor(Color.init(.label))
+                                .bold()
+                                .lineLimit(1)
+
+                            Text(event.location)
+                                .foregroundColor(Color.init(.label))
+                                .lineLimit(1)
+
+                            Text(event.date, style: .date)
+                                .font(.footnote)
+                                .bold()
+                                .foregroundColor(.gray)
+                                .lineLimit(1)
+                        }
+                        Spacer()
+                    }
                 }
-                .padding(8)
-                
-                Spacer()
-            }
-        }
-        .cornerRadius(12)
-        .padding(.horizontal, 16)
-        .frame(height: 100)
+                .cornerRadius(12)
+            })
     }
 }

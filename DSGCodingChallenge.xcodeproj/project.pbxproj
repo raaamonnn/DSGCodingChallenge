@@ -10,6 +10,9 @@
 		37201E66C8DD325AF7D85A14 /* Pods_DSGCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70360F460C069757E3BA6CA /* Pods_DSGCodingChallengeTests.framework */; };
 		4C530FE5612D4E0D8779F385 /* Pods_DSGCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9082D352F3BA50911B6A410 /* Pods_DSGCodingChallenge.framework */; };
 		85E100FB926A0BCB9B9A1A76 /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */; };
+		EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66682C27DC30E9009A1930 /* REPOEvents.swift */; };
+		EB66683527DC314B009A1930 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66683427DC314B009A1930 /* AppEnvironment.swift */; };
+		EB66684327DC62A1009A1930 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66684227DC62A1009A1930 /* SearchBar.swift */; };
 		EB78A8E927DAB6BE0041404A /* DSGCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */; };
 		EB78A8EB27DAB6BE0041404A /* VEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A8EA27DAB6BE0041404A /* VEventList.swift */; };
 		EB78A8ED27DAB6C20041404A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB78A8EC27DAB6C20041404A /* Assets.xcassets */; };
@@ -19,7 +22,7 @@
 		EB78A91A27DABCA90041404A /* VHomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A91927DABCA90041404A /* VHomeScreen.swift */; };
 		EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A92527DABFE50041404A /* VEventListItem.swift */; };
 		EB78A93127DAC01C0041404A /* VEventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93027DAC01C0041404A /* VEventDetails.swift */; };
-		EB78A93627DAC0350041404A /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93527DAC0350041404A /* Event.swift */; };
+		EB78A93627DAC0350041404A /* DTOEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93527DAC0350041404A /* DTOEvent.swift */; };
 		EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93A27DAC0550041404A /* VMEventDetails.swift */; };
 		EB78A94027DAC0630041404A /* VMEventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93F27DAC0630041404A /* VMEventListItem.swift */; };
 		EB78A98127DADCAF0041404A /* SVCSeatGeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A98027DADCAF0041404A /* SVCSeatGeek.swift */; };
@@ -51,6 +54,9 @@
 		B9082D352F3BA50911B6A410 /* Pods_DSGCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13B250745311B806CA1505A /* Pods-DSGCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSGCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DSGCodingChallengeTests/Pods-DSGCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB66682C27DC30E9009A1930 /* REPOEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPOEvents.swift; sourceTree = "<group>"; };
+		EB66683427DC314B009A1930 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		EB66684227DC62A1009A1930 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EB78A8E527DAB6BE0041404A /* DSGCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSGCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGCodingChallengeApp.swift; sourceTree = "<group>"; };
 		EB78A8EA27DAB6BE0041404A /* VEventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventList.swift; sourceTree = "<group>"; };
@@ -66,7 +72,7 @@
 		EB78A91927DABCA90041404A /* VHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHomeScreen.swift; sourceTree = "<group>"; };
 		EB78A92527DABFE50041404A /* VEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventListItem.swift; sourceTree = "<group>"; };
 		EB78A93027DAC01C0041404A /* VEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventDetails.swift; sourceTree = "<group>"; };
-		EB78A93527DAC0350041404A /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		EB78A93527DAC0350041404A /* DTOEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOEvent.swift; sourceTree = "<group>"; };
 		EB78A93A27DAC0550041404A /* VMEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventDetails.swift; sourceTree = "<group>"; };
 		EB78A93F27DAC0630041404A /* VMEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventListItem.swift; sourceTree = "<group>"; };
 		EB78A98027DADCAF0041404A /* SVCSeatGeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCSeatGeek.swift; sourceTree = "<group>"; };
@@ -124,6 +130,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB66682B27DC30C6009A1930 /* Data Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EB66682C27DC30E9009A1930 /* REPOEvents.swift */,
+				EB66683427DC314B009A1930 /* AppEnvironment.swift */,
+			);
+			path = "Data Repositories";
+			sourceTree = "<group>";
+		};
+		EB66684127DC6294009A1930 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB66684227DC62A1009A1930 /* SearchBar.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		EB78A8DC27DAB6BD0041404A = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +172,7 @@
 		EB78A8E727DAB6BE0041404A /* DSGCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				EB66682B27DC30C6009A1930 /* Data Repositories */,
 				EB78A92427DABF9B0041404A /* Views */,
 				EB78A92327DABF8A0041404A /* Models */,
 				EB78A92227DABF820041404A /* View Models */,
@@ -207,7 +231,7 @@
 		EB78A92327DABF8A0041404A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB78A93527DAC0350041404A /* Event.swift */,
+				EB78A93527DAC0350041404A /* DTOEvent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,6 +248,7 @@
 		EB78A95027DAC1280041404A /* EventView */ = {
 			isa = PBXGroup;
 			children = (
+				EB66684127DC6294009A1930 /* Helper */,
 				EB78A8EA27DAB6BE0041404A /* VEventList.swift */,
 				EB78A92527DABFE50041404A /* VEventListItem.swift */,
 				EB78A93027DAC01C0041404A /* VEventDetails.swift */,
@@ -473,10 +498,13 @@
 				EB78A8E927DAB6BE0041404A /* DSGCodingChallengeApp.swift in Sources */,
 				EB78A91A27DABCA90041404A /* VHomeScreen.swift in Sources */,
 				EB78A93127DAC01C0041404A /* VEventDetails.swift in Sources */,
-				EB78A93627DAC0350041404A /* Event.swift in Sources */,
+				EB66684327DC62A1009A1930 /* SearchBar.swift in Sources */,
+				EB78A93627DAC0350041404A /* DTOEvent.swift in Sources */,
 				EB78A98127DADCAF0041404A /* SVCSeatGeek.swift in Sources */,
 				EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */,
+				EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */,
 				EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */,
+				EB66683527DC314B009A1930 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
