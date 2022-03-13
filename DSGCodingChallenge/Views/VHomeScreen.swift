@@ -9,16 +9,18 @@ import SwiftUI
 
 struct VHomeScreen: View {
     @ObservedObject var repoEvents = REPOEvents()
+    
     var body: some View {
         NavigationView {
             ZStack {
-                if !repoEvents.events.isEmpty {
+                if repoEvents.events != nil {
                     VEventList(repoEvents: repoEvents)
+                        .animation(.easeInOut)
                 } else {
                     VSplashScreen()
+                        .transition(.flipFromBottom)
                 }
             }
-            .animation(.easeInOut)
         }
     }
 }

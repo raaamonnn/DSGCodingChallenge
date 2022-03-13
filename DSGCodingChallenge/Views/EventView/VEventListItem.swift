@@ -20,8 +20,10 @@ struct VEventListItem: View {
                     Color(.secondarySystemBackground)
                     HStack {
                         WebImage(url: URL(string: event.imageString ?? ""))
-                            .placeholder(Image(systemName: "photo"))
-                            .frame(width: 80, height: 80, alignment: .leading)
+                            .placeholder {
+                                Color(.brown)
+                            }
+                            .frame(width: 80, height: 80, alignment: .center)
                             .cornerRadius(12)
                             .padding(8)
 

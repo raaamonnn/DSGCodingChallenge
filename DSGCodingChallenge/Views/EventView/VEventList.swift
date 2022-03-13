@@ -19,12 +19,19 @@ struct VEventList: View {
         ScrollView {
             SearchBar(placeholder: "Search", text: $searchText)
                 .padding(.horizontal, 8)
+                .onChange(of: searchText) { (eventSearch) in
+                    repoEvents.updateEvents(with: eventSearch)
+                }
+            
             LazyVStack {
-                ForEach(repoEvents.events) { event in
-                    VEventListItem(event: event)
-                        .frame(height: 100, alignment: .leading)
-                        .padding(.horizontal, 16)
-                        .padding(.bottom, 8)
+                if repoEvents.events != nil {
+                    ForEach(repoEvents.events!) { event in
+                        VEventListItem(event: event)
+                            .frame(height: 100, alignment: .leading)
+                            .padding(.horizontal, 16)
+                            .padding(.bottom, 8)
+                            .transition(.opacity)
+                    }
                 }
             }
         }

@@ -10,7 +10,6 @@ import SwiftUI
 struct SearchBar: UIViewRepresentable {
     var placeholder: String
     @Binding var text: String
-//    weak var delegate: SearchBarActionDelegate?
     
     class Coordinator: NSObject, UISearchBarDelegate {
 
@@ -38,7 +37,6 @@ struct SearchBar: UIViewRepresentable {
     }
 
     func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {
-//        delegate?.didSearch(self)
         uiView.text = text
     }
     

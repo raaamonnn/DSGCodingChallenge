@@ -11,7 +11,6 @@
 		4C530FE5612D4E0D8779F385 /* Pods_DSGCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9082D352F3BA50911B6A410 /* Pods_DSGCodingChallenge.framework */; };
 		85E100FB926A0BCB9B9A1A76 /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */; };
 		EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66682C27DC30E9009A1930 /* REPOEvents.swift */; };
-		EB66683527DC314B009A1930 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66683427DC314B009A1930 /* AppEnvironment.swift */; };
 		EB66684327DC62A1009A1930 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66684227DC62A1009A1930 /* SearchBar.swift */; };
 		EB78A8E927DAB6BE0041404A /* DSGCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */; };
 		EB78A8EB27DAB6BE0041404A /* VEventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A8EA27DAB6BE0041404A /* VEventList.swift */; };
@@ -55,7 +54,6 @@
 		C13B250745311B806CA1505A /* Pods-DSGCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSGCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DSGCodingChallengeTests/Pods-DSGCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB66682C27DC30E9009A1930 /* REPOEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPOEvents.swift; sourceTree = "<group>"; };
-		EB66683427DC314B009A1930 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		EB66684227DC62A1009A1930 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EB78A8E527DAB6BE0041404A /* DSGCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSGCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGCodingChallengeApp.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				EB66682C27DC30E9009A1930 /* REPOEvents.swift */,
-				EB66683427DC314B009A1930 /* AppEnvironment.swift */,
 			);
 			path = "Data Repositories";
 			sourceTree = "<group>";
@@ -504,7 +501,6 @@
 				EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */,
 				EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */,
 				EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */,
-				EB66683527DC314B009A1930 /* AppEnvironment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

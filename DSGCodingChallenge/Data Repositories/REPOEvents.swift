@@ -9,40 +9,34 @@ import Foundation
 import Combine
 
 final class REPOEvents: ObservableObject {
-    @Published var events: [VMEventListItem] = []
+    @Published var events: [VMEventListItem]? = nil
     private var subscriber = Set<AnyCancellable>()
     
-    var svcSeatGeak = SVCSeatGeek()
+    private var svcSeatGeak = SVCSeatGeek()
+    
     init() {
-        svcSeatGeak.getEvents(eventName: "")
-            .receive(on: DispatchQueue.main)
-            .sink { (message) in
-                print("Retrieving Events \(message)")
-            } receiveValue: { (events) in
-                self.events = events.map { VMEventListItem(event: $0)}
-            }
-            .store(in: &subscriber)
+        self.getEvents(for: "")
     }
     
     func updateEvents(with eventName: String) {
+        self.getEvents(for: eventName)
+    }
+    
+    //Convenience Function for Retrieving Events
+    private func getEvents(for eventName: String) {
         svcSeatGeak.getEvents(eventName: eventName)
             .receive(on: DispatchQueue.main)
-            .sink { (message) in
-                print("Retrieving Events \(message)")
+            .sink { (completion) in
+                switch completion {
+                case .finished:
+                    break
+//                    print("[+] REPOEvents \t Successfully retrieved Events")
+                case .failure(let error):
+                    print("[-] REPOEvents \t Unable to retrieve Events", error)
+                }
             } receiveValue: { (events) in
                 self.events = events.map { VMEventListItem(event: $0)}
             }
             .store(in: &subscriber)
     }
-    
-//    private func getEvents(for eventName: String) {
-//        svcSeatGeak.getEvents(eventName: eventName)
-//            .receive(on: DispatchQueue.main)
-//            .sink { (message) in
-//                print("Retrieving Events \(message)")
-//            } receiveValue: { (events) in
-//                self.events = events.map { VMEventListItem(event: $0)}
-//            }
-//            .store(in: &subscriber)
-//    }
 }

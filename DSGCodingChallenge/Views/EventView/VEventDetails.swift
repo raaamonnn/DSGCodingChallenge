@@ -24,7 +24,9 @@ struct VEventDetails: View {
             VStack(alignment: .leading) {
                 WebImage(url: URL(string: event.imageString ?? ""))
                     .resizable()
-                    .placeholder(Image(systemName: "photo"))
+                    .placeholder {
+                        Color(.brown)
+                    }
                     .scaledToFit()
                 
                 VStack(alignment: .leading) {
