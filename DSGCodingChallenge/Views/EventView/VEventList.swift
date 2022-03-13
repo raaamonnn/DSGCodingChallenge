@@ -31,6 +31,7 @@ struct VEventList: View {
                             .padding(.horizontal, 16)
                             .padding(.bottom, 8)
                             .transition(.opacity)
+                            .accessibility(identifier: "\(event.id)")
                     }
                 }
             }

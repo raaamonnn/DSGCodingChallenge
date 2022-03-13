@@ -1,5 +1,5 @@
 //
-//  Event.swift
+//  Models.swift
 //  DSGCodingChallenge
 //
 //  Created by Ramon Amini on 3/10/22.

@@ -18,6 +18,11 @@ final class REPOEvents: ObservableObject {
         self.getEvents(for: "")
     }
     
+    convenience init(events: [VMEventListItem]) {
+        self.init()
+        self.events = events
+    }
+    
     func updateEvents(with eventName: String) {
         self.getEvents(for: eventName)
     }

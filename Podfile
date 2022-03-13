@@ -6,6 +6,7 @@ target 'DSGCodingChallenge' do
   # Pods for DSGCodingChallenge
 	#SwiftUI image loading framework built on top of SDWebImage
 	pod 'SDWebImageSwiftUI'
+	
 
   target 'DSGCodingChallengeTests' do
     inherit! :search_paths
