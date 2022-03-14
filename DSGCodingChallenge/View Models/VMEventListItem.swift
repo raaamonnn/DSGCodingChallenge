@@ -6,9 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct VMEventListItem: Identifiable {
-    var id = UUID()
+class VMEventListItem: Identifiable, ObservableObject {
+    var id: Int
     var imageString: String?
     var title: String
     var location: String
@@ -18,6 +19,7 @@ struct VMEventListItem: Identifiable {
         self.imageString = event.performers[0].image
         self.title = event.title
         self.location = event.venue.address + ", " + event.venue.state
+        self.id = event.id
         
         let dateFormatter = DateFormatter()
         print(event.datetime_local)

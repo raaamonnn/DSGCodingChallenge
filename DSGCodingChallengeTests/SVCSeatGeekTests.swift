@@ -10,17 +10,18 @@ import Combine
 
 @testable import DSGCodingChallenge
 
-var sut: SVCSeatGeek!
+var svcSut: SVCSeatGeek!
 private var cancellables: Set<AnyCancellable>!
 
 class SVCSeatGeekTests: XCTestCase {
     override func setUp() {
-        sut = SVCSeatGeek()
+        super.setUp()
+        svcSut = SVCSeatGeek()
         cancellables = []
     }
 
     override func tearDown() {
-        sut = nil
+        svcSut = nil
         cancellables = nil
         super.tearDown()
     }
@@ -30,7 +31,7 @@ class SVCSeatGeekTests: XCTestCase {
         let expectation = self.expectation(description: "Loaded Events")
         var events = [DTOEvent]()
         
-        sut.getEvents(eventName: "")
+        svcSut.getEvents(eventName: "")
             .receive(on: DispatchQueue.main)
             .sink { (completion) in
                 switch completion {
@@ -56,7 +57,7 @@ class SVCSeatGeekTests: XCTestCase {
         let expectation = self.expectation(description: "Loaded Events")
         var events = [DTOEvent]()
         
-        sut.getEvents(eventName: "Swift")
+        svcSut.getEvents(eventName: "Swift")
             .receive(on: DispatchQueue.main)
             .sink { (completion) in
                 switch completion {
@@ -82,7 +83,7 @@ class SVCSeatGeekTests: XCTestCase {
         let expectation = self.expectation(description: "Loaded Events")
         var events = [DTOEvent]()
         
-        sut.getEvents(eventName: "%")
+        svcSut.getEvents(eventName: "%")
             .receive(on: DispatchQueue.main)
             .sink { (completion) in
                 switch completion {

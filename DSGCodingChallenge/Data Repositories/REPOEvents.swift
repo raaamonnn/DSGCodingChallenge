@@ -7,9 +7,11 @@
 
 import Foundation
 import Combine
+import CoreData
 
 final class REPOEvents: ObservableObject {
     @Published var events: [VMEventListItem]? = nil
+    
     private var subscriber = Set<AnyCancellable>()
     
     private var svcSeatGeak = SVCSeatGeek()
@@ -27,7 +29,7 @@ final class REPOEvents: ObservableObject {
         self.getEvents(for: eventName)
     }
     
-    //Convenience Function for Retrieving Events
+    //Convenience Function for Retrieving Events from API
     private func getEvents(for eventName: String) {
         svcSeatGeak.getEvents(eventName: eventName)
             .receive(on: DispatchQueue.main)
@@ -40,7 +42,9 @@ final class REPOEvents: ObservableObject {
                     print("[-] REPOEvents \t Unable to retrieve Events", error)
                 }
             } receiveValue: { (events) in
-                self.events = events.map { VMEventListItem(event: $0)}
+                self.events = events.map { event in
+                    VMEventListItem(event: event)
+                }
             }
             .store(in: &subscriber)
     }

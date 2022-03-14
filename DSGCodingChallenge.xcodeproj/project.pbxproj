@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		37201E66C8DD325AF7D85A14 /* Pods_DSGCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F70360F460C069757E3BA6CA /* Pods_DSGCodingChallengeTests.framework */; };
 		4C530FE5612D4E0D8779F385 /* Pods_DSGCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9082D352F3BA50911B6A410 /* Pods_DSGCodingChallenge.framework */; };
-		85E100FB926A0BCB9B9A1A76 /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */; };
+		EB5969EE27DEBAF4007089A5 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5969EC27DEBAF4007089A5 /* UserData.xcdatamodeld */; };
+		EB5969F327DEBB30007089A5 /* CoreUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5969F227DEBB30007089A5 /* CoreUserData.swift */; };
+		EB5969FE27DEF02F007089A5 /* UserCoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5969FD27DEF02F007089A5 /* UserCoreDataTests.swift */; };
 		EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66682C27DC30E9009A1930 /* REPOEvents.swift */; };
 		EB66684327DC62A1009A1930 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB66684227DC62A1009A1930 /* SearchBar.swift */; };
 		EB78A8E927DAB6BE0041404A /* DSGCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */; };
@@ -35,13 +37,6 @@
 			remoteGlobalIDString = EB78A8E427DAB6BE0041404A;
 			remoteInfo = DSGCodingChallenge;
 		};
-		EB78A90227DAB6C20041404A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB78A8DD27DAB6BD0041404A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB78A8E427DAB6BE0041404A;
-			remoteInfo = DSGCodingChallenge;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +48,9 @@
 		B9082D352F3BA50911B6A410 /* Pods_DSGCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13B250745311B806CA1505A /* Pods-DSGCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DSGCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-DSGCodingChallengeTests/Pods-DSGCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D797B68DF3932F313068801F /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB5969ED27DEBAF4007089A5 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		EB5969F227DEBB30007089A5 /* CoreUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreUserData.swift; sourceTree = "<group>"; };
+		EB5969FD27DEF02F007089A5 /* UserCoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCoreDataTests.swift; sourceTree = "<group>"; };
 		EB66682C27DC30E9009A1930 /* REPOEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REPOEvents.swift; sourceTree = "<group>"; };
 		EB66684227DC62A1009A1930 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		EB78A8E527DAB6BE0041404A /* DSGCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSGCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +62,6 @@
 		EB78A8F627DAB6C20041404A /* DSGCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSGCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB78A8FA27DAB6C20041404A /* SVCSeatGeekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCSeatGeekTests.swift; sourceTree = "<group>"; };
 		EB78A8FC27DAB6C20041404A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB78A90127DAB6C20041404A /* DSGCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSGCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB78A91927DABCA90041404A /* VHomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VHomeScreen.swift; sourceTree = "<group>"; };
 		EB78A92527DABFE50041404A /* VEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventListItem.swift; sourceTree = "<group>"; };
 		EB78A93027DAC01C0041404A /* VEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventDetails.swift; sourceTree = "<group>"; };
@@ -90,14 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37201E66C8DD325AF7D85A14 /* Pods_DSGCodingChallengeTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB78A8FE27DAB6C20041404A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85E100FB926A0BCB9B9A1A76 /* Pods_DSGCodingChallenge_DSGCodingChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				EB66682C27DC30E9009A1930 /* REPOEvents.swift */,
+				EB5969F227DEBB30007089A5 /* CoreUserData.swift */,
 			);
 			path = "Data Repositories";
 			sourceTree = "<group>";
@@ -146,6 +136,7 @@
 		EB78A8DC27DAB6BD0041404A = {
 			isa = PBXGroup;
 			children = (
+				EB5969EC27DEBAF4007089A5 /* UserData.xcdatamodeld */,
 				EB78A8E727DAB6BE0041404A /* DSGCodingChallenge */,
 				EB78A8F927DAB6C20041404A /* DSGCodingChallengeTests */,
 				EB78A8E627DAB6BE0041404A /* Products */,
@@ -159,7 +150,6 @@
 			children = (
 				EB78A8E527DAB6BE0041404A /* DSGCodingChallenge.app */,
 				EB78A8F627DAB6C20041404A /* DSGCodingChallengeTests.xctest */,
-				EB78A90127DAB6C20041404A /* DSGCodingChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,7 +162,6 @@
 				EB78A92327DABF8A0041404A /* Models */,
 				EB78A92227DABF820041404A /* View Models */,
 				EB78A92127DABF700041404A /* Services */,
-				EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */,
 				EB78A8EC27DAB6C20041404A /* Assets.xcassets */,
 				EB78A8F127DAB6C20041404A /* Info.plist */,
 				EB78A8EE27DAB6C20041404A /* Preview Content */,
@@ -193,6 +182,7 @@
 			children = (
 				EB78A8FA27DAB6C20041404A /* SVCSeatGeekTests.swift */,
 				EB78A8FC27DAB6C20041404A /* Info.plist */,
+				EB5969FD27DEF02F007089A5 /* UserCoreDataTests.swift */,
 			);
 			path = DSGCodingChallengeTests;
 			sourceTree = "<group>";
@@ -226,6 +216,7 @@
 		EB78A92427DABF9B0041404A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EB78A8E827DAB6BE0041404A /* DSGCodingChallengeApp.swift */,
 				EB78A91927DABCA90041404A /* VHomeScreen.swift */,
 				EB78A95027DAC1280041404A /* EventView */,
 			);
@@ -284,28 +275,6 @@
 			productReference = EB78A8F627DAB6C20041404A /* DSGCodingChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB78A90027DAB6C20041404A /* DSGCodingChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB78A91027DAB6C20041404A /* Build configuration list for PBXNativeTarget "DSGCodingChallengeUITests" */;
-			buildPhases = (
-				D4491E5BC9C1591DE082AFBE /* [CP] Check Pods Manifest.lock */,
-				EB78A8FD27DAB6C20041404A /* Sources */,
-				EB78A8FE27DAB6C20041404A /* Frameworks */,
-				EB78A8FF27DAB6C20041404A /* Resources */,
-				CC01E0297D646970DE4AFF19 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB78A90327DAB6C20041404A /* PBXTargetDependency */,
-			);
-			name = DSGCodingChallengeUITests;
-			packageProductDependencies = (
-			);
-			productName = DSGCodingChallengeUITests;
-			productReference = EB78A90127DAB6C20041404A /* DSGCodingChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -319,10 +288,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					EB78A8F527DAB6C20041404A = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = EB78A8E427DAB6BE0041404A;
-					};
-					EB78A90027DAB6C20041404A = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = EB78A8E427DAB6BE0041404A;
 					};
@@ -345,7 +310,6 @@
 			targets = (
 				EB78A8E427DAB6BE0041404A /* DSGCodingChallenge */,
 				EB78A8F527DAB6C20041404A /* DSGCodingChallengeTests */,
-				EB78A90027DAB6C20041404A /* DSGCodingChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -361,13 +325,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EB78A8F427DAB6C20041404A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB78A8FF27DAB6C20041404A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -416,45 +373,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSGCodingChallenge/Pods-DSGCodingChallenge-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC01E0297D646970DE4AFF19 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSGCodingChallenge-DSGCodingChallengeUITests/Pods-DSGCodingChallenge-DSGCodingChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DSGCodingChallenge-DSGCodingChallengeUITests/Pods-DSGCodingChallenge-DSGCodingChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DSGCodingChallenge-DSGCodingChallengeUITests/Pods-DSGCodingChallenge-DSGCodingChallengeUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4491E5BC9C1591DE082AFBE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DSGCodingChallenge-DSGCodingChallengeUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F77922D9DD09961FCB47E2BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5969EE27DEBAF4007089A5 /* UserData.xcdatamodeld in Sources */,
 				EB78A94027DAC0630041404A /* VMEventListItem.swift in Sources */,
 				EB78A8EB27DAB6BE0041404A /* VEventList.swift in Sources */,
 				EB78A8E927DAB6BE0041404A /* DSGCodingChallengeApp.swift in Sources */,
@@ -495,6 +414,7 @@
 				EB7F9C5827DD8B300044C571 /* MockedData.swift in Sources */,
 				EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */,
 				EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */,
+				EB5969F327DEBB30007089A5 /* CoreUserData.swift in Sources */,
 				EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,13 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB78A8FB27DAB6C20041404A /* SVCSeatGeekTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB78A8FD27DAB6C20041404A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				EB5969FE27DEF02F007089A5 /* UserCoreDataTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,11 +435,6 @@
 			isa = PBXTargetDependency;
 			target = EB78A8E427DAB6BE0041404A /* DSGCodingChallenge */;
 			targetProxy = EB78A8F727DAB6C20041404A /* PBXContainerItemProxy */;
-		};
-		EB78A90327DAB6C20041404A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB78A8E427DAB6BE0041404A /* DSGCodingChallenge */;
-			targetProxy = EB78A90227DAB6C20041404A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -736,46 +645,6 @@
 			};
 			name = Release;
 		};
-		EB78A91127DAB6C20041404A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B63ACDC5172AF9001BB2008 /* Pods-DSGCodingChallenge-DSGCodingChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2MXG9CA59K;
-				INFOPLIST_FILE = DSGCodingChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramon.DSGCodingChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DSGCodingChallenge;
-			};
-			name = Debug;
-		};
-		EB78A91227DAB6C20041404A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 625205B2A127F58625DA50F3 /* Pods-DSGCodingChallenge-DSGCodingChallengeUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2MXG9CA59K;
-				INFOPLIST_FILE = DSGCodingChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Ramon.DSGCodingChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DSGCodingChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -806,16 +675,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB78A91027DAB6C20041404A /* Build configuration list for PBXNativeTarget "DSGCodingChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB78A91127DAB6C20041404A /* Debug */,
-				EB78A91227DAB6C20041404A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB5969EC27DEBAF4007089A5 /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB5969ED27DEBAF4007089A5 /* UserData.xcdatamodel */,
+			);
+			currentVersion = EB5969ED27DEBAF4007089A5 /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB78A8DD27DAB6BD0041404A /* Project object */;
 }

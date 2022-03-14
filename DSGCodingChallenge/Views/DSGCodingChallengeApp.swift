@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DSGCodingChallengeApp: App {
+    @Environment(\.scenePhase) var scenePhase
+    
     var body: some Scene {
         WindowGroup {
             VHomeScreen()
+        }
+        //Save changes when app moves to background
+        .onChange(of: scenePhase) { _ in
+            PersistenceController.shared.save()
         }
     }
 }

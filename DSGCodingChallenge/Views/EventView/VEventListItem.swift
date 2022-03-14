@@ -9,15 +9,16 @@ import SwiftUI
 import SDWebImageSwiftUI
 
 struct VEventListItem: View {
-    var event: VMEventListItem
-
+    @ObservedObject var event: VMEventListItem
+    @EnvironmentObject var coreUserData: CoreUserData
+    
     var body: some View {
         NavigationLink (
-            destination: VEventDetails(event: VMEventDetails(event: event))
+            destination: VEventDetails(event: event)
                 .navigationBarTitleDisplayMode(.inline),
             label: {
                 ZStack {
-                    Color(.secondarySystemBackground)
+                    Color(coreUserData.contains(favoredEventId: event.id) ? UIColor.init(.pink).withAlphaComponent(0.5) : .secondarySystemBackground)
                     HStack {
                         WebImage(url: URL(string: event.imageString ?? ""))
                             .placeholder {

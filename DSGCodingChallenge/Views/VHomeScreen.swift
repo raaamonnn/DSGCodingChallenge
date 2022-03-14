@@ -9,11 +9,14 @@ import SwiftUI
 
 struct VHomeScreen: View {
     @ObservedObject var repoEvents = REPOEvents()
+    @ObservedObject var coreUserData = CoreUserData()
+    
+    @Environment(\.managedObjectContext) var persistenceController
     
     var body: some View {
         NavigationView {
             ZStack {
-                if repoEvents.events != nil {
+                if repoEvents.events != nil && coreUserData.favoredEvents != nil {
                     VEventList(repoEvents: repoEvents)
                         .animation(.easeInOut)
                 } else {
@@ -22,6 +25,7 @@ struct VHomeScreen: View {
                 }
             }
         }
+        .environmentObject(coreUserData)
     }
 }
 

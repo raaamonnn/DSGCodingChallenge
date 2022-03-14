@@ -7,10 +7,11 @@
 
 import SwiftUI
 import SDWebImageSwiftUI
+import CoreData
 
 struct VEventDetails: View {
-    var event: VMEventDetails
-    @State var favored = false
+    var event: VMEventListItem
+    @EnvironmentObject var coreUserData: CoreUserData
     
     private let dateFormatter: DateFormatter = {
         var dateFormatter = DateFormatter()
@@ -49,10 +50,9 @@ struct VEventDetails: View {
         .navigationTitle(event.title)
         .navigationBarItems(trailing: Button(
         action: {
-            favored.toggle()
-            //Add persistence
+            coreUserData.editFavoredEvents(eventId: event.id)
         }, label: {
-            if favored {
+            if coreUserData.contains(favoredEventId: event.id) {
                 Image(systemName: "heart.fill")
                     .foregroundColor(.pink)
             } else {
