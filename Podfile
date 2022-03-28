@@ -13,8 +13,4 @@ target 'DSGCodingChallenge' do
     # Pods for testing
   end
 
-  target 'DSGCodingChallengeUITests' do
-    # Pods for testing
-  end
-
 end
