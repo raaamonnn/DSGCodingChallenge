@@ -23,10 +23,8 @@
 		EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A92527DABFE50041404A /* VEventListItem.swift */; };
 		EB78A93127DAC01C0041404A /* VEventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93027DAC01C0041404A /* VEventDetails.swift */; };
 		EB78A93627DAC0350041404A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93527DAC0350041404A /* Models.swift */; };
-		EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93A27DAC0550041404A /* VMEventDetails.swift */; };
 		EB78A94027DAC0630041404A /* VMEventListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A93F27DAC0630041404A /* VMEventListItem.swift */; };
 		EB78A98127DADCAF0041404A /* SVCSeatGeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78A98027DADCAF0041404A /* SVCSeatGeek.swift */; };
-		EB7F9C5827DD8B300044C571 /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7F9C5727DD8B300044C571 /* MockedData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +64,8 @@
 		EB78A92527DABFE50041404A /* VEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventListItem.swift; sourceTree = "<group>"; };
 		EB78A93027DAC01C0041404A /* VEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEventDetails.swift; sourceTree = "<group>"; };
 		EB78A93527DAC0350041404A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		EB78A93A27DAC0550041404A /* VMEventDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventDetails.swift; sourceTree = "<group>"; };
 		EB78A93F27DAC0630041404A /* VMEventListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMEventListItem.swift; sourceTree = "<group>"; };
 		EB78A98027DADCAF0041404A /* SVCSeatGeek.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVCSeatGeek.swift; sourceTree = "<group>"; };
-		EB7F9C5727DD8B300044C571 /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
 		F70360F460C069757E3BA6CA /* Pods_DSGCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DSGCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -198,7 +194,6 @@
 		EB78A92227DABF820041404A /* View Models */ = {
 			isa = PBXGroup;
 			children = (
-				EB78A93A27DAC0550041404A /* VMEventDetails.swift */,
 				EB78A93F27DAC0630041404A /* VMEventListItem.swift */,
 			);
 			path = "View Models";
@@ -208,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				EB78A93527DAC0350041404A /* Models.swift */,
-				EB7F9C5727DD8B300044C571 /* MockedData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,8 +405,6 @@
 				EB66684327DC62A1009A1930 /* SearchBar.swift in Sources */,
 				EB78A93627DAC0350041404A /* Models.swift in Sources */,
 				EB78A98127DADCAF0041404A /* SVCSeatGeek.swift in Sources */,
-				EB7F9C5827DD8B300044C571 /* MockedData.swift in Sources */,
-				EB78A93B27DAC0550041404A /* VMEventDetails.swift in Sources */,
 				EB66682D27DC30E9009A1930 /* REPOEvents.swift in Sources */,
 				EB5969F327DEBB30007089A5 /* CoreUserData.swift in Sources */,
 				EB78A92627DABFE50041404A /* VEventListItem.swift in Sources */,
